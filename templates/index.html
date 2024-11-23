@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="produ.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <meta name="title" content="Florescer">
+    <meta name="description" content="">
+
+
+    <title>Florescer</title>
+
+</head>
+
+<body>
+   
+    <header>
+        <a href="#" class="logo">Florescer</a>
+
+        <nav class="navbar" id="menu">
+            <a class="ativo" href="#home">Home</a>
+            <a href="produ.html">Produtos</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#serv">Serviços</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class="fas fa-shopping-cart" id="cart-icon" data-quantity="0"></i>
+
+            <!--CARRINHO-->
+            <div class="cart">
+                <h2 class="cart-title">Carrinho</h2>
+                <div class="cart-content">
+
+                </div>
+                <div class="total">
+                    <div class="total-title">Total:</div>
+                    <div class="total-price">R$00.00</div>
+                </div>
+                <button id="buy-btn" type="submit">Comprar</button>
+                <i class="fas fa-times" id="close-cart"></i>
+
+            </div>
+            <div id="login-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close-modal">&times;</span>
+                   
+            
+
+                    <form id="login-form" class="form active" action="formulario.php">
+                        <div class="login-content">
+                            <label for="clientName" class="login-label">Nome:</label>
+                            <input type="text" id="clientName" class="login-input" required>
+                        </div>
+                       
+            
+                       
+                        <div>
+                            <button type="submit" class="button" id="login-btn">Entrar</button>
+                        </div>
+            
+                        <div>
+                            <p class="signup">Não tem uma conta? <a href="cadastro.html" id="switch-to-register">Cadastre-se agora</a></p>
+                        </div>
+                    
+                    </form>
+            
+                </div>
+            </div>
+            
+            
+
+    </header>
+
+    <form action="" id="search-form">
+        <div class="search-container">
+            <input type="search" placeholder="O que você busca?" id="search-box">
+
+            <i class="fas fa-times" type="button" id="close"></i>
+            <i class="fas fa-search" id="search-button"></i>
+            <ul id="search-results" class="search-results"></ul>
+        </div>
+    </form>
+    <section class="home" id="home">
+        <div class="swiper home-slide">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+
+                        <h3>Amora Miura</h3>
+                        <p>Devido aos seus benefícios,
+                            as cápsulas de amora miúra estão
+                            indicadas para completar o tratamento
+                            de diabetes, colesterol alto, problemas
+                            no fígado, calvície, prisão de ventre,
+                            TPM, sintomas de menopausa e osteoporose.</p>
+                    </div>
+                    <div class="image">
+                        <img src="/img/AMORA MIURA.png" alt="1">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Sabor Laranja</span>
+                        <h3>Chá Verde</h3>
+                        <p>Imunidade Forte: Rico em antioxidantes,
+                            o Chá Verde Laranja Rei Terra fortalece
+                            o sistema imunológico e protege o corpo
+                            contra doenças. Sabor Refrescante:
+                            A deliciosa combinação do chá verde
+                            com a laranja garante uma experiência
+                            sensorial única, tornando o consumo do
+                            chá um momento prazeroso.</p>
+                    </div>
+                    <div class="image">
+                        <img src="/img/cha verde-laranja.webp" alt="1">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span> Sabor Limão</span>
+                        <h3>Chá Verde</h3>
+                        <p>O Chá Verde em pó é um antioxidante que
+                            pode auxiliar na proteção dos danos
+                            causados pelos radicais livres, na
+                            manutenção dos tecidos conectivos.
+                            Pode auxiliar na manutenção da pele e
+                            também no transporte de ferro no organismo.</p>
+                    </div>
+                    <div class="image">
+                        <img src="/img/cha verde-limao.webp" alt="1">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span> Sabor Maracujá</span>
+                        <h3>Chá Verde</h3>
+                        <p>Imunidade Forte: Rico em antioxidantes,
+                            o Chá Verde Maracujá Rei Terra fortalece
+                            o sistema imunológico e protege o corpo
+                            contra doenças. Sabor Refrescante:
+                            A deliciosa combinação do chá verde com a
+                            laranja garante uma experiência sensorial
+                            única, tornando o consumo do chá um momento
+                            prazeroso.</p>
+                    </div>
+                    <div class="image">
+                        <img src="/img/cha verde-maracuja.webp" alt="1">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <h3>Colageno</h3>
+                        <p>Colágeno Hidrolisado Rei Terra,
+                            para o que é indicado e para o que serve?
+                            É recomendado principalmente para ajudar a
+                            manter a saúde dos tecidos e das articulações.</p>
+                    </div>
+                    <div class="image">
+                        <img src="/img/colageno.webp" alt="1">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Filtro de Categorias -->
+    <section class="filter-container" id="products">
+        <div class="filters">
+            <button class="filter-btn " onclick="filterItems('all')">Todos</button>
+            <button class="filter-btn " onclick="filterItems('shakes')">Whey</button>
+            <button class="filter-btn " onclick="filterItems('capsulas')">Cápsulas</button>
+            <button class="filter-btn " onclick="filterItems('oleos')">Óleos</button>
+            <button class="filter-btn " onclick="filterItems('cha')">Chá</button>
+            <button class="filter-btn " onclick="filterItems('semente')">Sementes</button>
+        </div>
+        <div class="product-box category-1"></div>
+        <div class="product-box category-2"></div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="produ shop container">
+        <ul id="product-list">
+            <h3 class="sub-heading">Nossos Produtos</h3>
+            <h1 class="heading">Mais Comprados</h1>
+
+            <div class="box-container shop-content" id="product-list">
+                <!-- Produtos -->
+
+                <div class="box product-box shakes" data-product-id="1">
+                    <img src="/img/shake-baun.jpg" alt="Whey protein Baunilha" class="product-img">
+                    <h3 class="product-title">Whey protein/ Baunilha</h3>
+                    <p class="product-p">1 pote c/900g</p>
+                    <span class="price">R$45,50</span>
+                    <button class="add-cart">Comprar</button>
+
+                </div>
+
+                <div class="box product-box shakes" data-product-id="2">
+                    <img src="/img/shake-choc.jpg" alt="Whey protein Chocolate" class="product-img">
+                    <h3 class="product-title">Whey protein/ Chocolate</h3>
+                    <p class="product-p">1 pote c/900g</p>
+                    <span class="price">R$45,50</span>
+                    <button class="add-cart">Comprar</button>
+                </div>
+
+                <div class="box product-box shakes" data-product-id="3">
+                    <img src="/img/shake-mora.jpg" alt="Whey protein Morango" class="product-img">
+                    <h3 class="product-title">Whey protein/ Morango</h3>
+                    <p class="product-p">1 pote c/900g</p>
+                    <span class="price">R$45,50</span>
+                    <button class="add-cart">Comprar</button>
+                </div>
+
+                <div class="box product-box capsulas" data-product-id="4">
+                    <img src="/img/enzima lactase.jpg" alt="Enzima Lactase" class="product-img">
+                    <h3 class="product-title">Enzima Lactase</h3>
+                    <p class="product-p">1 frasco c/30 caps. de 750mg</p>
+                    <span class="price">R$34,50</span>
+                    <button class="add-cart">Comprar</button>
+                </div>
+
+                <div class="box product-box capsulas" data-product-id="5">
+                    <img src="/img/cogumelo.jpg" alt="Cogumelo" class="product-img">
+                    <h3 class="product-title">Cogumelo</h3>
+                    <p class="product-p">1 frasco c/120 caps. de 500mg</p>
+                    <span class="price">R$28,50</span>
+                    <button class="add-cart">Comprar</button>
+                </div>
+                <div class="box product-box semente" data-product-id="6">
+                    <img src="/img/linhaça-semente.webp" alt="Whey protein Baunilha" class="product-img">
+                    <h3 class="product-title">Linhaça <span>(Marrom e Dourada)</span></h3>
+                    <p class="product-p">500 Gramas</p>
+                    <span class="price">R$24,50</span>
+                    <button class="add-cart">Comprar</button>
+
+                </div>
+
+                <div class="box product-box semente" data-product-id="7">
+                    <img src="/img/chia-semente.jpg" alt="Whey protein Baunilha" class="product-img">
+                    <h3 class="product-title">Chia</h3>
+                    <p class="product-p">500 Gramas</p>
+                    <span class="price">R$24,50</span>
+                    <button class="add-cart">Comprar</button>
+                </div>
+                <div class="box product-box semente" data-product-id="8">
+                    <img src="/img/levedo de cerveja.jpg" alt="Whey protein Baunilha" class="product-img">
+                    <h3 class="product-title">Levedo de Cerveja</h3>
+                    <p class="product-p">200 Gramas</p>
+                    <span class="price">R$10,50</span>
+                    <button class="add-cart">Comprar</button>
+                </div>
+
+
+                <div class="box product-box oleos" data-product-id="9">
+                    <img src="/img/oleo de borragem.jpg" alt="Óleo de Borragem" class="product-img">
+                    <h3 class="product-title">Óleo de Borragem</h3>
+                    <p class="product-p">1 frasco c/60 caps. de 500mg</p>
+                    <span class="price">R$37,50</span>
+                    <button class="add-cart">Comprar</button>
+                </div>
+
+
+                <div class="box product-box oleos" data-product-id="10">
+
+                    <img src="/img/oleo de primula.webp" alt="" class="product-img">
+                    <h3 class="product-title">Óleo de Primulal</h3>
+                    <p class="product-p">1 frasco c/60 caps. de 500mg</p>
+                    <span class="price">R$37,50</span>
+                    <i class="add-cart">Comprar</i>
+                </div>
+                <div class="box product-box oleos" data-product-id="11">
+
+                    <img src="/img/oleo de linhaca.jpg" alt="" class="product-img">
+                    <h3 class="product-title">Óleo de Linhaça</h3>
+                    <p class="product-p">1 frasco c/60 caps. de 500mg</p>
+
+                    <span class="price">R$37,50</span>
+                    <i class="add-cart">Comprar</i>
+                </div>
+                <div class="box product-box capsulas" data-product-id="12">
+                    <img src="/img/curcuma UC2.jpg" alt="Curcuma + UC2" class="product-img">
+                    <h3 class="product-title">Curcuma + UC2</h3>
+                    <p class="product-p">1 frasco c/30 caps. de 750mg</p>
+                    <span class="price">R$32,50</span>
+                    <button class="add-cart">Comprar</button>
+                </div>
+
+                <div class="box product-box capsulas" data-product-id="13">
+                    <img src="/img/dimalato de magnédio.jpg" alt="Dimalato de Magnésio" class="product-img">
+                    <h3 class="product-title">Dimalato de Magnésio</h3>
+                    <p class="product-p">1 frasco c/100 caps. de 500mg</p>
+                    <span class="price">R$44,50</span>
+                    <button class="add-cart">Comprar</button>
+                </div>
+
+                <div class="box product-box capsulas" data-product-id="14">
+                    <img src="/img/desinchar.webp" alt="Desinchar" class="product-img">
+                    <h3 class="product-title">Desinchar</h3>
+                    <p class="product-p">1 frasco c/120 caps. de 500mg</p>
+                    <span class="price">R$44,50</span>
+                    <button class="add-cart">Comprar</button>
+                </div>
+
+                <div class="box product-box capsulas" data-product-id="15">
+                    <img src="/img/psyllium.webp" alt="Psyllium" class="product-img">
+                    <h3 class="product-title">Psyllium</h3>
+                    <p class="product-p">1 frasco c/120 caps. de 500mg</p>
+                    <span class="price">R$22,00</span>
+                    <button class="add-cart">Comprar</button>
+                </div>
+            </div>
+
+
+    </section>
+
+    <section class="about" id="sobre">
+        <h3 class="sub-heading">Sobre Nós</h3>
+        <h1 class="heading">Um Pouco Da Nossa História</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="/img/loja.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Somos Uma Loja De Produtos Naturais</h3>
+                <p>A história da loja inicia-se em dezembro de 2013.
+                    Acidentalmente comecei a trabalhar numa loja de produtos naturais, onde sequer sabia o que era
+                    produto natural.
+                    La, tive um grande aprendizado, foram pouco mais de 2 anos de trabalho. Devido a crise econômica de
+                    2015/2016, os proprietários resolveram vender a loja e os novos não queriam os antigos
+                    colaboradores, então, fui demitido. E fui trabalhar por conta própria, com manutenção de
+                    eletrônicos.
+                    <span id="more-content" style="display: none;">Os novos proprietários da loja, me convidaram para
+                        retornar, porém, como já estava trabalhando por conta, não quis regressar ao meu antigo
+                        trabalho.
+                        Em janeiro de 2017, entrei na faculdade de gestão comercial, pois queria administrar melhor a
+                        minha empresa.Em novembro de 2017, uma ex colega de trabalho da loja de produtos naturais, saiu
+                        de onde trabalhava e conseguiu um emprego em outra loja de produtos naturais. La estava
+                        precisando de mais uma pessoa, e ela lembrou-se mim. Me indicou para os proprietários e como a
+                        proposta era boa, resolvi deixar o meu negócio principal e torná-lo um fonte de renda
+                        alternativa.
+                        Entrei como vendedor e, 3 meses após o início, tornei-me responsável pela loja (uma espécie de
+                        gerente).
+                        Como responsável, adquiri muito know-how na área, com contatos diversos de clientes, até que, em
+                        2019, meu patrão me deu a idéia de abrir minha própria loja de produtos naturais. Gostei da
+                        ideia e fui me preparando para a abertura da empresa.
+                        Fui comprando e guardando os equipamentos e materiais necessários para a abertura da loja. Até
+                        que, em janeiro de 2021, contraí o vírus da COVID, e fui demitido (pois meus então patrões eram
+                        idosos e tinham muito medo do vírus), foi o ponto de virada de chave, pois a partir daquele
+                        momento, comecei a procurar ponto para abrir minha loja. Manifestei interesse por um ponto,
+                        porém como havia, uma pessoa na fila antes de mim, foi dado preferência a ela, até que, em 31 de
+                        março, recebi uma mensagem do proprietário do imóvel, descendo que havia outro vago, se eu me
+                        interessava, prontamente aceitei e em 10 dias abri a minha primeira loja.
+                        Pouco mais de um ano, um amigo meu, vendo o crescimento da loja, quis comprar uma parte da loja
+                        e virar meu sócio, o que prontamente recusei, mas deu a idéia de abrir uma nova loja, a qual
+                        receptivamente aceitou. E em julho de 2022 abri a segunda unidade.
+                        Em abril de 2023, convidei uma ex colega de trabalho, para trabalhar em uma das minhas lojas.
+                        Como ela é formada e especialista na área, a pedida salarial dela foi bem alta, a qual, não
+                        aceitei, porém, fiz a proposta de abrir uma loja e ela aceitou. e em junho de 2023, abri minha
+                        3° loja.
+                        Como a falta de tempo estava prejudicando o funcionamento da 1° loja, decidi vender uma parte
+                        para uma colaboradora, que pagaria a parte dela em trabalho o qual aceitou e em outubro de 2023,
+                        deixou de ser colaboradora e passou a ser minha sócia.
+                        A meta agora é expandir para 8 lojas já em 2025. Todos os sócios já estão com planos para
+                        abertura de novas lojas. E há pessoas aguardando para abrirem lojas comigo também.
+                    </span>
+                </p>
+                <button id="read-more-button">Ler Mais</button>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Delivery Grátis</span>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Pagamento Fácil</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </ul>
+    </section>
+
+
+    <section class="review" id="serv">
+
+        <h3 class="sub-heading">Nossos Clientes</h3>
+
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="/img/user.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Fabiano Souza</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Estou adorando o novo suplemento natural que comprei. Desde que comecei a usar, notei um aumento
+                        significativo na minha energia e bem-estar geral. O fato de ser totalmente natural é um grande
+                        diferencial para mim. Recomendo a todos que buscam uma forma mais saudável de cuidar do corpo!"
+                    </p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="/img/user.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Gustavo Barros</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"A experiência de compra foi simplesmente fantástica. O site é fácil de navegar e a entrega foi
+                        muito rápida. O produto superou minhas expectativas em termos de funcionalidade e design. Estou
+                        muito satisfeito e certamente voltarei para comprar mais!"</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="/img/user.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Maria Fatima</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p> "Os chás naturais dessa marca são maravilhosos! Cada xícara é uma experiência de sabor e
+                        bem-estar. Além de serem deliciosos, eles realmente ajudam a relaxar e a melhorar minha
+                        digestão. Com certeza, é um investimento que vale a pena para minha saúde e prazer."</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="/img/user.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Conceição Almeida</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Comprei vários produtos desta loja e fiquei impressionado com a qualidade e o cuidado com que
+                        tudo foi enviado. O site é bem projetado e a navegação é intuitiva, tornando a compra muito
+                        agradável. Além disso, o programa de fidelidade e os descontos oferecidos são um ótimo bônus.
+                        Altamente recomendável para quem busca produtos naturais e um bom atendimento!"
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="/img/user.jpg" alt="">
+                        <div class="user-info">
+                            <h3>João Santos</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p> "A experiência de compra na loja online foi bastante positiva. O site é bem estruturado e a
+                        navegação é simples. Achei fácil encontrar o que eu procurava. A entrega foi rápida e os
+                        produtos chegaram em bom estado. A única sugestão que tenho é melhorar a descrição de alguns
+                        itens para ajudar na escolha."</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="/img/user.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Bianca Assunção</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Gostei muito de comprar nesta loja online. O processo de compra foi tranquilo e o site é fácil
+                        de usar. Os produtos são de boa qualidade e a entrega foi feita dentro do prazo. Seria ótimo se
+                        houvesse mais opções de pagamento e algumas promoções mais frequentes."</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="/img/user.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Vânia Batista</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Descobri este produto recentemente e fiquei impressionado com a qualidade. Desde o primeiro uso,
+                        notei uma grande diferença. O atendimento ao cliente também foi excepcional, respondendo
+                        rapidamente às minhas perguntas. Recomendo a todos que procuram um produto confiável e um
+                        serviço excelente!"</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="/img/user.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Rafaela Camargo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Foi uma das melhores compras que já fiz! O produto chegou bem embalado e em perfeito estado. A
+                        qualidade é excepcional e o preço é justo. O atendimento ao cliente foi amigável e eficiente,
+                        tornando a experiência de compra muito agradável. Vou continuar comprando aqui com certeza!"</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="order" id="pedido">
+        <h3 class="sub-heading">Seu Pedido</h3>
+        <h1 class="heading">Rápido e Fácil</h1>
+
+        <form action="mailto:florescerprimitiva@gmail.com" method="post" enctype="text/plain">
+            <div class="inputBox">
+                <div class="input">
+                    <span>Seu nome</span>
+                    <input type="text" placeholder="Digite seu nome">
+                </div>
+
+                <div class="input">
+                    <span>Seu número</span>
+                    <input type="number" placeholder="Digite seu número">
+                </div>
+            </div>
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>Seu Produto</span>
+                    <input type="text" placeholder="Digite seu pedido">
+                </div>
+
+                <div class="input">
+                    <span>Mais produtos</span>
+                    <input type="test" placeholder="Outros produtos">
+                </div>
+            </div>
+
+            <div class="inputBox">
+                <div class="input">
+                    <span>Quantidade</span>
+                    <input type="number" placeholder="Quantos produtos">
+                </div>
+
+                <div class="input">
+                    <span>Data e Hora</span>
+                    <input type="datetime-local">
+                </div>
+
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Seu endereço</span>
+                        <textarea name="" placeholder="Digite seu endereço" cols="30" rows="10" id="">
+
+                    </textarea>
+                    </div>
+
+                    <div class="input">
+                        <span>Uma mensagem</span>
+                        <textarea name="" placeholder="Digite uma mensagem" cols="30" rows="10" id="">
+                    </textarea>
+                    </div>
+                    <a href="florescerprimitiva@gmail.com">
+                    <input type="submit" value="Seu pedido" class="btn" onclick="enviarPedido()">
+                    </a>
+                </div>
+        </form>
+    
+    </section>
+<footer>
+    <div class="row">
+        <div class="col">
+            <a href="#" class="logo">Florescer</a>
+            <p>
+                O Melhor Para Você E Sua Família!.
+            </p>
+        </div>
+        <div class="col">
+            <h3>Loja <div class="underline"><span></span></div></h3>
+            <a href="https://maps.app.goo.gl/LAe5j92DrGvFcT9WA">Endereço</a>
+            <p>Rua Dona Primitiva Vianco, 674-Centro, Osasco-SP, 06010-000</p>
+            <a href="mailto:florescerprimitiva@gmail.com" class="email-id">florescerprimitiva@gmail.com</a>
+            <br>
+            <a href="mailto:+55 11 96113-1288">+55 11 96113-1288</a>
+        </div>
+        <div class="col">
+            <h3>Links <div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a class="ativo" href="#home">Home</a></li>
+                <li><a href="produ.html">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#serv">Serviços</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Contato <div class="underline"><span></span></div></h3>
+            <form class="footer-form">
+                <i class="bi bi-envelope"></i>
+                <input type="email" placeholder="Digite seu email:" required>
+                <button type="submit"><i class="bi bi-arrow-right-short"></i></button>
+            </form>
+            <a href="mailto:+55 11 96113-1288">+55 11 96113-1288</a>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/MSJxuq9yF2Xd2H3B/?mibextid=qi2Omg"><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/viaflorescer?igsh=MTFwNWd2a20xcW5meg=="><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+        <hr>
+
+        <p class="copyright">Direitos Reservados &copy; 2024 - Isabella de Fátima, Deborah Santos Albiach, Bruno sousa Santos, Felipe Pinheiro Frutuoso, Kevin Gabriel, Beatriz Pereira.</p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/static/slide.js"></script>
+    <script src="/static/cart.js"></script>
+    <script src="/static/barra.js"></script>
+
+</body>
+
+</html>
